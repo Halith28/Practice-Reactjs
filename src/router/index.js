@@ -15,19 +15,14 @@ import {
 } from "react-router-dom";
 import { Routes } from "./routes";
 
-import {
-  NotFound,
-  
-} from './../screens';
+import { NotFound, Home } from "./../screens";
 
 const RouterApp = (props) => {
-
   return (
     <Router>
       <Switch>
         {/* form component list */}
-        <Route exact path={Routes.home} component={NotFound} />
-        
+        <Route exact path={Routes.home} component={Home} />
 
         {/* For unknow/non-defined path */}
         <Route path="*" component={NotFound} />

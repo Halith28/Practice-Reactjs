@@ -6,4 +6,5 @@
  * @desc Exporting all the screens from /src/screens
  */
 
+export { default as Home } from "./home";
 export { default as NotFound } from "./notFound";
